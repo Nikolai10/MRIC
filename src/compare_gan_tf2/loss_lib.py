@@ -51,7 +51,7 @@ def check_dimensions(d_real, d_fake, d_real_logits, d_fake_logits):
 def non_saturating(d_real_logits, d_fake_logits, d_real=None, d_fake=None):
     """Returns the discriminator and generator loss for Non-saturating loss.
 
-    Note that for MRIC we preserve that batch dimension for g_loss.
+    Note that for MRIC we preserve the batch dimension for g_loss.
 
     Args:
       d_real_logits: logits for real points, shape [batch_size, 1].
